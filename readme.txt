@@ -1,1 +1,3 @@
-You are beautiful!
+You and you are beautiful!
+
+Are you ready?
