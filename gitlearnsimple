@@ -1,0 +1,67 @@
+git init
+
+git add <file>
+
+git commit -m "内容"
+
+git status
+
+git diff
+
+git reset --hard HEAD^               还原回退版本
+
+git reset --hard 版本号
+
+git log
+
+git reflog
+
+git checkout --<file>          丢弃工作区的修改
+
+git reset HEAD <file>              可以把暂存区的修改撤销掉,重新放回工作区
+
+
+git rm <file>
+
+git checkout --<file>           丢弃工作区的修改
+
+
+远程库
+关联远程库：git remote add origin git@github-com:yanfei-zhou/ 远库名.git；
+$ git remote add origin git@github.com:michaelliao/learngit.git
+
+git push -u origin master第一次推送
+
+git push origin 分支名
+
+克隆git clone git@github.com:michaelliao/gitskills.git
+
+
+git checkout -b dev                新建并切换分支
+
+git branch                         查看分支
+
+git branch  dev                    新建dev分支
+
+git checkout dev                   切换分支
+
+git merge dev
+
+git merge --no-ff -m "…………" dev
+
+git branch -d dev                  删除dev分支
+
+
+查看远程库信息，使用git remote -v
+
+git tag v1.0                       打标签
+
+git tag v0.9 f52c633               给f52c633打标签
+
+git tag -a v0.1 -m "version 0.1 released" 1094adb           给1094adb打标签，添加备注
+
+推送某个标签到远程          git push origin v1.0
+
+一次性推送全部尚未推送到远程的本地标签： git push origin --tags
+
+
